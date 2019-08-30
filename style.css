@@ -8,6 +8,15 @@ h2{
     font-family: 'DM Serif Display', serif;
     font-size: 50px;
 }
+
+h3{
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+}
+
+.white{
+    color: white;
+}
 a{
     color: white;
     text-decoration: none;
@@ -15,7 +24,11 @@ a{
 .biglink{
     font-family: 'DM Serif Display', serif;
     font-size: 28px;
-    padding: 1rem;
+
+}
+
+.behind{
+    z-index: -1;
 }
 button{
     background-color: white;
@@ -31,8 +44,19 @@ button{
 .centeredtext{
     text-align: center;
 }
+.introtext{
+    margin: 4rem;
+}
+.family{
+    display: flex;
+    /* align-self: flex-end; */
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
 .intro {
     width: 80%;
+    /* max-height: 700px; */
     margin: 0px auto;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -44,12 +68,182 @@ button{
 .bluebox {
     grid-area: bluebox;
     background-color: rgb(169, 221, 255);
+    display: flex;
+    flex-direction: row;
+
+
 }
+
+/* .blurb{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/family-340x326.png);
+    align-self: flex-end;
+} */
 .rustbox {
     grid-area: rustbox;
     background-color: rgb(212, 84, 84);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .goldbox {
     grid-area: goldbox;
     background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.topnav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(243, 236, 236);
+    justify-content: space-between;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: darkslategrey;
+    text-align: center;
+    padding: 16px 70px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: goldenrod;
+  }
+
+  li a:visited{
+      color: black;
+      font-weight: bold;
+  }
+  
+  .homepage {
+    width: 80%;
+    margin: 0px auto;
+
+    
+  }
+  .homepagegrey {
+      background-color: darkslategrey;
+  }
+  .homepagegold {
+      background-color: goldenrod;
+  }
+  .wrapper {
+    background: linear-gradient(
+    to bottom, 
+    darkslategrey 50%, 
+    goldenrod 50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: 
+    "join join"
+    "category category"
+    "about about"
+  }
+
+  .join{
+      grid-area: join;
+      padding: 4rem 7rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "joinheader join-text"
+
+  }
+
+.joinheader{
+    grid-area: joinheader;
+    justify-content: flex-start;
+}
+
+.join-text{
+    grid-area: join-text;
+      justify-content: flex-end;
+  }
+
+
+
+  .category{
+      margin-top: 8rem;
+      grid-area: category;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+  }
+
+  .imagecrop{
+    position: absolute;
+    clip: rect(0px,150px,160px,0px);
+  }
+
+  .child{
+      background-color: white;
+      margin: 1rem;
+  }
+
+  .adult{
+      background-color: white;
+      margin: 1rem;
+  }
+
+  .older{
+      background-color: white;
+      margin: 1rem;
+  }
+
+  .about{
+      grid-area: about;
+  }
+
+  .blueboxchild {
+    height: 11rem;
+    background-color: rgb(169, 221, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+
+
+}
+
+  .goldboxadult {
+    height: 11rem;
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+
+}
+
+  .rustboxold {
+    height: 11rem;
+    background-color: rgb(212, 84, 84);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+
+  }

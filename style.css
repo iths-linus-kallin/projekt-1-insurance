@@ -1,3 +1,4 @@
+/* Anna Boberg & Jakob Gauffin */
 body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.15rem;
@@ -29,10 +30,6 @@ h3{
 .greynumber{
     color: rgba(153, 153, 153, 0.8);
     font-size: 2rem;
-    /* margin-top: 2rem;
-    margin-left: 2rem; */
-    /* padding-top: 2rem;
-    padding-left: 2rem; */
 }
 
 .biglink{
@@ -41,10 +38,12 @@ h3{
     margin: 0;
     line-height: 0;
 }
+
 a{
     color: white;
     text-decoration: none;
 }
+
 button{
     background-color: white;
     padding: 1rem 3rem;
@@ -53,13 +52,14 @@ button{
     margin: 2.5rem 0;
     font-size: 0.8rem;
     font-weight: bold;
-    -webkit-box-shadow: 26px 41px 18px -25px rgba(209,209,209,1);
-    -moz-box-shadow: 26px 41px 18px -25px rgba(209,209,209,1);
-    box-shadow: 26px 41px 18px -25px rgba(209,209,209,1);
+    -webkit-box-shadow: 1px 6px 7px -5px #383838; 
+box-shadow: 1px 6px 7px -5px #383838;
 }
+
 .white {
     color: white;
 }
+
 .intro {
     width: 69.5%;
     margin: 0 auto;
@@ -68,10 +68,10 @@ button{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
+
 .bluebox {
     margin: 0;
     padding: 0;
-    /* min-width: 560px; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -83,8 +83,6 @@ button{
     margin: 15rem 0 0 0;
     line-height: 0;
 }
-/* .relativesize {
-} */
 
 .blueboxtext{
     width: 58%;
@@ -92,10 +90,12 @@ button{
     grid-column: 1/span 1;
     grid-row: 1/span 2;
 }
+
 .introtext {
     margin-top: 1.5rem;
     margin-right: 1rem;
 }
+
 .rustbox {
     grid-column: 2/span 1;
     grid-row: 1/span 1;
@@ -105,6 +105,7 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 .goldbox {
     grid-column: 2/span 1;
     grid-row: 2/span 1;
@@ -114,21 +115,25 @@ button{
     justify-content: center;
     align-items: center;
 }
+
 article > p {
     margin: 0.5rem 0;
     line-height: 1.7rem;
 }
+
 article > .centeredtext {
     margin: 0.5rem;
     line-height: 1.5rem;
     font-size: 0.8rem;
 }
+
 .topnav {
     width: 69.5%;
     margin: 0 auto;
     padding: 0;
     background-color: rgb(235, 235, 235);
 }
+
 .topnav ul {
     margin: 2rem 10.5rem;
     list-style-type: none;
@@ -136,14 +141,17 @@ article > .centeredtext {
     justify-content: space-around;
     align-items: center;
 }
+
 .topnav a {
     color: rgb(143, 143, 143);
     font-weight: bold;
     font-size: 0.9rem;
 }
+
 .topnav a:visited {
     color: black;
 }
+
 main {
     margin: 0 auto;
     width: 69.5%;
@@ -151,11 +159,13 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 .homepagegrey {
     grid-column: 1/span 1;
     grid-row: 1/span 1;
     background-color: rgb(169, 161, 158)
 }
+
 .homepagegold {
     grid-column: 1/span 1;
     grid-row: 2/span 1;
@@ -169,40 +179,38 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex-wrap: wrap; */
 }
+
 .gridarticlea {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (360px 1fr));
-    /* grid-template-rows: 1fr; */
     grid-gap: 8.3rem;
 }
+
 .articleleft {
     grid-column: 1/span 1;
     grid-row: 1/span1;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
+
 .articleright {
     grid-column: 2/span 1;
     grid-row: 1/span1;
     margin: 0 5rem 0 0;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
+
 .homepagearticleb {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 2rem;
-    
+    font-size: 0.9rem;
+    color: rgb(169, 161, 158);
 }
-/* .child{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-} */
+
+.homepagearticleb h3{
+    color: black;
+}
 
 .whitecardchild{
     background-color: white;
@@ -212,7 +220,8 @@ main {
     grid-row: 1/span 1;
     margin-top: 3rem;
     text-align: center;
-    
+    -webkit-box-shadow: 1px 10px 11px -4px #383838; 
+    box-shadow: 1px 10px 11px -4px #383838;
 }
 
 .whitecardadult{
@@ -223,7 +232,8 @@ main {
     grid-row: 1/span 1;
     margin-top: 3rem;
     text-align: center;
-    
+    -webkit-box-shadow: 1px 10px 11px -4px #383838; 
+    box-shadow: 1px 10px 11px -4px #383838;
 }
 
 .whitecardold{
@@ -234,7 +244,8 @@ main {
     grid-row: 1/span 1;
     margin-top: 3rem;
     text-align: center;
-    
+    -webkit-box-shadow: 1px 10px 11px -4px #383838; 
+    box-shadow: 1px 10px 11px -4px #383838;   
 }
 
 .blueboxchild {
@@ -242,9 +253,10 @@ main {
     background-color: rgb(199, 221, 234);
     border-radius: 1rem;
     margin-top: -3rem;
-    
-    
-    
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .goldboxadult {
@@ -252,8 +264,10 @@ main {
     background-color: rgb(250, 177, 49);
     border-radius: 1rem;
     margin-top: -3rem;
-    
-    
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .rustboxold {
@@ -261,6 +275,10 @@ main {
     background-color: rgb(241, 121, 73);
     border-radius: 1rem;
     margin-top:-3rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .homepagearticlec{
@@ -268,6 +286,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 6rem 6rem 4rem 6rem;
+    text-align: center;
 }
 
 .boxcontent{
@@ -279,35 +299,26 @@ main {
     margin: 0;
     padding: 0;
 }
-/* .boxarticle {
-    background-color: brown;
-} */
-/* .boxcontent .boxh2 {
-    margin: 0;
-    padding: 2rem;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;  
-} */
+
 .boxarticle {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .boxh2{
     margin: 0 15%;
     text-align: center;
 }
+
 .boxcontent .greynumber {
     display:flex;
     align-self: flex-start;
     margin: 2rem;
     height: 0%;
 }
+
 .boxcontent p{
     display:flex;
     flex-direction: row;
@@ -320,15 +331,6 @@ main {
     color: rgb(77, 77, 77);
     text-align: center;
 }
-/* .boxcontent > article {
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;   
-} */
-/* .boxcontent p {
-    align-self: baseline;
-} */
 
 .boxcontent >article:nth-of-type(1){
     background-color: rgb(199, 221, 234);
@@ -346,30 +348,14 @@ main {
     background-color: rgb(241, 121, 73);
 }
 
-/* .flexboxgreynumber {
-    display: flex;
-} */
-
-/* .boxcontent >p{
-    text-align: center;
-    padding: 2rem;
-} */
-
 .bottomnav{
     margin: 0 auto;
     width: 69.5%;
     background-color: rgb(169, 161, 158);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
-/* .bottomnav >div{
-} */
-/* .bottomnav a {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-} */
+
 .bottomnav p{
     width: 100%;
     display: flex;
@@ -379,9 +365,8 @@ main {
     font-weight: bold;
     line-height: 0rem;
     margin: 0.5rem;
-    /* padding: 0rem;
-    margin: 0; */
 }
+
 .upperp {
     padding: 1rem 0 0rem 0;
     font-size: 1.8rem;
@@ -433,7 +418,6 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    
 }
 
 .formgrid{
@@ -450,33 +434,36 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 5rem 3rem;
+    padding: 5rem 5rem;
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 5rem 8rem;
-    
-    
+    padding: 5rem 8rem;    
 }
-/* input {
-    width: 50%;
+
+input{
+    line-height: 2rem;
 }
+
 textarea {
-    width:50%;
-} */
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 3rem;
+    text-indent: 1rem; 
+}
+
 .formwidth {
     width:100%;
     resize: none;
 }
+
 form p{
     color: white;
     align-self: flex-start;
     padding-left: 0;
-    line-height: 0;
-    
+    margin: 2rem 0 0.6rem 0;
 }
 
 .formbutton{
@@ -486,7 +473,23 @@ form p{
 .map{
     grid-column: 1/span 1;
     grid-row: 2/span 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    background-image: url(/images/sanfransisco.jpg)
+}
+
+.map article{
+    background-color: rgb(250, 177, 49);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 20rem 2rem;
+    padding: 1rem;
+}
+
+.map h2{
+    justify-content: flex-start;
+}
+
+.map p{
+    line-height: 1rem;
 }

@@ -7,10 +7,10 @@ body {
 }
 
 h1{
-        font-family: 'DM Serif Display', serif;
-        font-size: 3.5rem;
-        margin: 1rem 0;
-        line-height: 3.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+    margin: 1rem 0;
+    line-height: 3.5rem;
     
 }
 
@@ -27,10 +27,12 @@ h3{
 }
 
 .greynumber{
-    color: rgb(169, 161, 158);
-    align-self: flex-start;
+    color: rgba(153, 153, 153, 0.8);
     font-size: 2rem;
-    padding-top: 0.3rem;
+    /* margin-top: 2rem;
+    margin-left: 2rem; */
+    /* padding-top: 2rem;
+    padding-left: 2rem; */
 }
 
 .biglink{
@@ -81,6 +83,8 @@ button{
     margin: 15rem 0 0 0;
     line-height: 0;
 }
+/* .relativesize {
+} */
 
 .blueboxtext{
     width: 58%;
@@ -158,16 +162,6 @@ main {
     background-color: rgb(250, 177, 49)
 }
 
-.boxcontent{
-    grid-column: 1/span 1;
-    grid-row: 3/span 1;
-    background: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0;
-    padding: 0;
-}
 .homepagesection {
     grid-column: 1/span 1;
     grid-row: 1/span 2;
@@ -175,7 +169,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .gridarticlea {
     margin: 0;
@@ -249,8 +243,8 @@ main {
     border-radius: 1rem;
     margin-top: -3rem;
     
-
-
+    
+    
 }
 
 .goldboxadult {
@@ -259,7 +253,7 @@ main {
     border-radius: 1rem;
     margin-top: -3rem;
     
-
+    
 }
 
 .rustboxold {
@@ -267,9 +261,7 @@ main {
     background-color: rgb(241, 121, 73);
     border-radius: 1rem;
     margin-top:-3rem;
-    
-
-  }
+}
 
 .homepagearticlec{
     display: flex;
@@ -278,63 +270,124 @@ main {
     align-items: center;
 }
 
+.boxcontent{
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+/* .boxarticle {
+    background-color: brown;
+} */
+/* .boxcontent .boxh2 {
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+} */
+.boxarticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.boxh2{
+    margin: 0 15%;
+    text-align: center;
+}
+.boxcontent .greynumber {
+    display:flex;
+    align-self: flex-start;
+    margin: 2rem;
+    height: 0%;
+}
+.boxcontent p{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    margin: -4rem 5rem;
+    z-index: 2;
+    color: rgb(77, 77, 77);
+    text-align: center;
+}
+/* .boxcontent > article {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;   
+} */
+/* .boxcontent p {
+    align-self: baseline;
+} */
 
 .boxcontent >article:nth-of-type(1){
     background-color: rgb(199, 221, 234);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
 }
 
 .boxcontent >article:nth-of-type(2n){
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* padding: 2rem; */
-    
+    background-color: white;
 }
 
 .boxcontent >article:nth-of-type(3){
     background-color: rgb(235, 235, 235);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .boxcontent > article:nth-of-type(5){
     background-color: rgb(241, 121, 73);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
-.boxcontent >p{
+/* .flexboxgreynumber {
+    display: flex;
+} */
+
+/* .boxcontent >p{
     text-align: center;
     padding: 2rem;
-}
+} */
 
 .bottomnav{
     margin: 0 auto;
     width: 69.5%;
     background-color: rgb(169, 161, 158);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+/* .bottomnav >div{
+} */
+/* .bottomnav a {
     justify-content: center;
-    
-}
-.bottomnav >div{
-    text-align: center;
-    
-    
-}
+    align-items: center;
+    width: 100%;
+} */
 .bottomnav p{
-    color: black;
-    line-height: 0.1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 48, 47);
+    font-weight: bold;
+    line-height: 0rem;
+    margin: 0.5rem;
+    /* padding: 0rem;
+    margin: 0; */
+}
+.upperp {
+    padding: 1rem 0 0rem 0;
+    font-size: 1.8rem;
+}
+.lowerp {
+    padding: 0 0 2rem 0;
 }
 
 footer{
@@ -380,7 +433,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-
+    
 }
 
 .formgrid{

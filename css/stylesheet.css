@@ -109,7 +109,8 @@ nav {
     justify-content: space-around;
     flex-direction: row;
     text-align: center;
-    padding: 25px;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 nav a {
@@ -160,7 +161,7 @@ section {
     text-align: center;
 }
 
-.middle {
+/* .middle {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -168,6 +169,16 @@ section {
     position: absolute;
     top: 850px;
     left: 50px;
+} */
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    position: relative;
+    top: -100px;
+    height: 0px;
 }
 
 .card {
@@ -178,7 +189,7 @@ section {
     width: 170px;
     background-color: white;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgb(194, 194, 194);
     text-align: center;

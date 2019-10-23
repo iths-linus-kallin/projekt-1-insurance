@@ -70,7 +70,17 @@ span {
     background-position-x: 90%;
 }
 
+.menu{
+    font-family: 'Quicksand', sans-serif;
+    font-size: .7rem;
+    color: rgb(61, 61, 61);
+    padding: 30px;
+}
+
 nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     text-align: center;
     padding: 25px;
 }
